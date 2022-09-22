@@ -1,0 +1,23 @@
+#container {
+    border: 1px solid black;
+    padding: 15px;
+ }
+ 
+ #top-section {
+   border-bottom: 1px solid red;
+ }
+ 
+ #expand-container {
+   overflow: hidden;
+ }
+ 
+ #expand-contract {
+   border-bottom: 1px solid red;
+   margin-top: -100%;
+   transition: all 1s;
+ }
+ 
+ #expand-contract.expanded {
+    background-color: rgb(72, 224, 12);
+    margin-top: 0;
+ }
