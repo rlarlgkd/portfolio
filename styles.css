@@ -1,23 +1,91 @@
-#container {
-    border: 1px solid black;
-    padding: 15px;
- }
- 
- #top-section {
-   border-bottom: 1px solid red;
- }
- 
- #expand-container {
-   overflow: hidden;
- }
- 
- #expand-contract {
-   border-bottom: 1px solid red;
-   margin-top: -100%;
-   transition: all 1s;
- }
- 
- #expand-contract.expanded {
-    background-color: rgb(72, 224, 12);
-    margin-top: 0;
- }
+/* body,
+html {
+    width: 100%;
+    height: 100%;
+    
+} */
+
+
+.image {
+  position: absolute;
+  display: block;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  top: 60%;
+  left: 50%;
+}
+
+#overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #0ef006;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.expanded {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.envelope {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  transform: translate(-50%, -50%);
+  border: 1px solid white;
+}
+/* .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+.intro-header {
+  /* position: absolute; */
+  /* padding-top: 50px;
+  padding-bottom: 50px; */
+  height: 400px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: url('forestwall.jpg') no-repeat center center fixed;
+  background-size: cover;
+  border: 1px solid blue;
+}
+
+.space {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  border: 1px solid red;
+  background: linear-gradient(
+    bottom,
+    white,
+    rgb(17, 192, 17),
+  );
+}
+
+/* .introduce {
+  width
+} */

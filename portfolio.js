@@ -1,5 +1,5 @@
-function expandContract() {
-    const el = document.getElementById("expand-contract")
-    el.classList.toggle('expanded')
-    el.classList.toggle('collapsed')
+function expandLetter() {
+    const el = document.getElementById("overlay");
+    el.style.height='100%';
+    el.style.bottom=0;
  }
